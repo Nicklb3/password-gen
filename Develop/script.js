@@ -1,4 +1,7 @@
 // Assignment code here
+function generatePassword() {
+  // console.log("clicked")
+};
 
 
 // Get references to the #generate element
