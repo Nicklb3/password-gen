@@ -24,6 +24,11 @@ function generatePassword() {
     return
   }
 
+  var useLowerCase = window.confirm("Do you want to use lowercase letters?")
+  var useUpperCase = window.confirm("Do you want to use uppercase letters?")
+  var useNumbers = window.confirm("Do you want to use numbers?")
+  var useSpecialCharacters = window.confirm("Do you want to use special characters?")
+
 
 };
 
