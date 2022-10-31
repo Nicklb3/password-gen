@@ -2,7 +2,7 @@
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var numbers = ["0","1","2","3","4","5","6","7","8","9"];
-var specialCharacters = "~`!@#$%^&*()-_=+\|]}[{';:?/>.<,";
+var specialCharacters = ["`","~","!","@","#","$","%","^","&","*","(",")","_","-","+","=","[","{","]","}","|",":",";","'","/","?",".",">",",","<"];
 
 // var options = {
 //   lowerCase: abcdefghijklmnopqrstuvwxyz,
@@ -22,13 +22,15 @@ function generatePassword() {
   if (passwordLength < 8 || passwordLength > 128) {
     window.alert("password must be greater than 8 characters and less than 128 characters.")
     return
+  }
+
   var useLowerCase = window.confirm("Do you want to use lowercase letters?")
   var useUpperCase = window.confirm("Do you want to use uppercase letters?")
   var useNumbers = window.confirm("Do you want to use numbers?")
   var useSpecialCharacters = window.confirm("Do you want to use special characters?")
-
-  // var index = Math.floor(Math.random() * options.length);
-  // var computerChoice = options[index];
+  
+  var index = Math.floor(Math.random() * options.length);
+  var writePassword = options[index];
 
   if (useLowerCase === true) {
     useLowerCase.push(lowerCase)
@@ -45,6 +47,7 @@ function generatePassword() {
   if (useSpecialCharacters === true) {
     useSpecialCharacters.push(specialCharacters)
   };
+
 
 
 };
