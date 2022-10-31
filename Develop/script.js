@@ -1,7 +1,13 @@
 // Assignment code here
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var specialCharacters = "~`!@#$%^&*()-_=+\|]}[{'":;?/>.<,";
+
 function generatePassword() {
   // console.log("clicked")
 };
+
+
 
 
 // Get references to the #generate element
