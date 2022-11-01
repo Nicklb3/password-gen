@@ -12,10 +12,9 @@ var compOptions = [];
 
 // function to generate a password
 function generatePassword() {
-  // console.log("clicked")
+  
+  // prompt on how many characters you would like to use for password
   var userInput = window.prompt("How many characters would you like your password to be?");
-
-  // console.log("userInput")
 
   // variable for length of password
   var passwordLength = (userInput);
@@ -50,8 +49,8 @@ function generatePassword() {
   };
   
   
-  var index = Math.floor(Math.random() * options.length);
-  var writePassword = options[index];
+  // var index = Math.floor(Math.random() * options.length);
+  // var writePassword = options[index];
 
 };
 
