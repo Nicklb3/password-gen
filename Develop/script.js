@@ -4,6 +4,8 @@ var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 var numbers = ["0","1","2","3","4","5","6","7","8","9"];
 var specialCharacters = ["`","~","!","@","#","$","%","^","&","*","(",")","_","-","+","=","[","{","]","}","|",":",";","'","/","?",".",">",",","<"];
 
+var compOptions = [];
+
 // var options = {
 //   lowerCase: abcdefghijklmnopqrstuvwxyz,
 //   upperCase: ABCDEFGHIJKLMNOPQRSTUVWXYZ,
@@ -33,19 +35,19 @@ function generatePassword() {
   var writePassword = options[index];
 
   if (useLowerCase === true) {
-    useLowerCase.push(lowerCase)
+    compOptions.push(lowerCase)
   };
 
   if (useUpperCase === true) {
-    useUpperCase.push(upperCase)
+    compOptions.push(upperCase)
   };
 
   if (useNumbers === true) {
-    useNumbers.push(numbers)
+    compOptions.push(numbers)
   };
 
   if (useSpecialCharacters === true) {
-    useSpecialCharacters.push(specialCharacters)
+    compOptions.push(specialCharacters)
   };
 
 
